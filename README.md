@@ -21,12 +21,19 @@ You can see the application running here: https://lucasfsousa.com/covid-19-risk-
 # How to test it locally?
 
 If you want to test it locally, clone the project and execute:
-```
-    npm install
-    npm run start
+```bash
+npm install
+npm run start
 ```
 
-When doing this for the first time, please also copy `countries.geojson` to `dist` folder.
+**Note**: When doing this for the first time, please also copy `countries.geojson` to `dist` folder.
+
+But if you prefer test it in a Docker container, clone the project and execute:
+```bash
+docker-compose up development
+```
+
+**Note**: You need to install [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/).
 
 Then access in the browser: http://localhost:1234
 
